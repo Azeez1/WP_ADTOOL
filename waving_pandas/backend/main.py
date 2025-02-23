@@ -1,11 +1,9 @@
 # Import FastAPI to create a simple web server
-from fastapi import FastAPI, HTTPException 
-
-# If you have additional routers, they can be included here as well
+from fastapi import FastAPI as FastAPIApp
 # from .routers import example_router
 
 # Initialize the FastAPI application
-app = FastAPI()
+app = FastAPIApp()
 
 # Define a basic home route to check if the server is running
 @app.get("/")
