@@ -1,5 +1,7 @@
 # Import the database engine from our database setup
 from app.database import engine
+from database import engine
+
 import os
 
 # Retrieve the database URL to confirm it's correctly set
