@@ -1,7 +1,12 @@
 run = "i am here"
-modules = ["python-3.11"]
+modules = ["python-3.11", "postgresql-16"]
 [nix]
 channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "i am here"]
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+exposeLocalhost = true
